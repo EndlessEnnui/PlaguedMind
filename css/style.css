@@ -3,37 +3,39 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'MedievalSharp', serif; /* Medieval font */
+    font-family: 'MedievalSharp', serif; 
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Ensure stacking context */
+    position: relative; 
+    cursor: url('../assets/custom-cursor.png'), auto;
     z-index: -1;
 }
 
 .home-body {
-    background-image: url('../assets/parch.jpeg'); /* Background for the home page */
+    background-image: url('../assets/parch.jpeg'); 
     background-size: cover;
     background-position: center;
-    z-index: -2; /* Background image behind the p5.js sketch */
+    z-index: -2; 
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    cursor: url('../assets/custom-cursor.png'), auto;
 }
 
 .home-content {
     text-align: center;
     color: #4d3819; /* Text color */
-    text-shadow: 1px 1px 2px #362b00; /* Text shadow for a medieval effect */
+    text-shadow: 1px 1px 2px #362b00; 
     padding: 20px;
     max-width: 800px;
-    z-index: 2; /* Above the p5.js sketch and background */
-    position: relative; /* Ensure it is positioned above the background */
+    z-index: 2; 
+    position: relative; 
 }
 
 .home-content h1 {
@@ -51,18 +53,19 @@ body {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #4d3819; /* Button background */
+    background-color: #4d3819; 
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
     border-radius: 5px;
     transition: background-color 0.3s;
-    border: 1px solid #362b00; /* Button border */
+    border: 1px solid #362b00; 
+    cursor: url('../assets/custom-cursor.png'), auto;
     z-index: 2;
 }
 
 .enter-link:hover {
-    background-color: #362b00; /* Button background on hover */
+    background-color: #362b00; 
 }
 
 .entry-container {
@@ -73,28 +76,30 @@ body {
 .entry {
     width: 80%;
     max-width: 800px;
-    background-image: url('../assets/parch.jpeg'); /* Parchment paper background */
+    background-image: url('../assets/parch.jpeg'); 
     background-size: cover;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
     border: 2px solid #c0a080; /* Border color */
+    cursor: url('../assets/custom-cursor.png'), auto;
     z-index: 2;
 }
 
 .content {
     text-align: justify;
     color: #362b00; /* Text color */
-    line-height: 1.6; /* Line height for readability */
+    line-height: 1.6; 
     z-index: 2;
+    cursor: url('../assets/custom-cursor.png'), auto;
 }
 
 h2 {
     font-size: 24px;
     margin-bottom: 10px;
     color: #4d3819; /* Heading color */
-    text-decoration: underline; /* Underline for headings */
+    text-decoration: underline; 
     text-align: center; /* Center align the headings */
     z-index: 2;
 }
@@ -102,20 +107,21 @@ h2 {
 p {
     font-size: 18px;
     z-index: 2;
+    cursor: url('../assets/custom-cursor.png'), auto;
 }
 
-/* Old parchment background texture */
+
 body::after {
     content: '';
     background: url('../assets/plaguedoc.jpg');
     background-size: cover;
-    opacity: 0.2; /* Adjust opacity to blend with the background */
+    opacity: 0.2; 
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     position: fixed;
-    z-index: 0; /* Ensure it is behind all other elements */
+    z-index: 0; 
 }
 
 .decorative-border {
