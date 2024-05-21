@@ -154,39 +154,39 @@ body::after {
 
 .plague-doctor-container {
     position: fixed;
-    bottom: 5px; /* Adjust this value to control the distance from the bottom */
+    bottom: 5px; 
     left: 0;
     width: 100%;
-    pointer-events: none; /* Ensures it doesn't block other interactions */
-    z-index: 4; /* Adjust as needed to ensure it's visible over other elements */
+    pointer-events: none; 
+    z-index: 4; 
 }
 
 .plague-doctor {
     position: absolute;
     bottom: 0;
-    height: 250px; /* Adjust height as needed */
-    animation: walk 10s linear infinite alternate; /* Adjust duration as needed */
+    height: 250px; 
+    animation: walk 10s linear infinite alternate; 
 }
 
 @keyframes walk {
     0% {
         left: 0;
-        transform: scaleX(1); /* Face right */
+        transform: scaleX(1); 
     }
     45% {
-        left: calc(100% - 100px); /* Walk to the right edge minus the width of the image */
-        transform: scaleX(1); /* Face right */
+        left: calc(100% - 100px); 
+        transform: scaleX(1); 
     }
     50% {
         left: calc(100% - 100px);
-        transform: scaleX(-1); /* Quick flip to face left */
+        transform: scaleX(-1); 
     }
     95% {
         left: 0;
-        transform: scaleX(-1); /* Walk to the left edge facing left */
+        transform: scaleX(-1); 
     }
     100% {
         left: 0;
-        transform: scaleX(1); /* Quick flip to face right */
+        transform: scaleX(1); 
     }
 }
