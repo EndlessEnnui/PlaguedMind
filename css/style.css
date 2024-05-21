@@ -15,6 +15,17 @@ body {
     z-index: -1;
 }
 
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white; /* Heading color */
+    text-decoration: underline; 
+    text-align: center; /* Center align the headings */
+    z-index: 2;
+
+}
+
+
 .home-body {
     background-image: url('../assets/parch.jpeg'); 
     background-size: cover;
@@ -154,36 +165,36 @@ body::after {
 
 .plague-doctor-container {
     position: fixed;
-    bottom: 10px; /* Adjust this value to control the distance from the bottom */
+    bottom: 10px; 
     left: 0;
     width: 100%;
-    pointer-events: none; /* Ensures it doesn't block other interactions */
-    z-index: 4; /* Adjust as needed to ensure it's visible over other elements */
+    pointer-events: none; 
+    z-index: 4; 
 }
 
 .plague-doctor {
     position: absolute;
     bottom: 0;
-    height: 250px; /* Adjust height as needed */
-    animation: walk 10s linear infinite; /* Adjust duration as needed */
+    height: 250px; 
+    animation: walk 10s linear infinite; 
 }
 
 @keyframes walk {
     0% {
         left: 0;
-        transform: scaleX(1); /* Face right */
+        transform: scaleX(1); 
     }
     49.9% {
-        left: calc(100% - 100px); /* Walk to the right edge minus the width of the image */
-        transform: scaleX(1); /* Face right */
+        left: calc(100% - 100px); 
+        transform: scaleX(1); 
     }
     50% {
         left: calc(100% - 100px);
-        transform: scaleX(-1); /* Flip to face left */
+        transform: scaleX(-1); 
     }
     100% {
         left: 0;
-        transform: scaleX(-1); /* Walk to the left edge facing left */
+        transform: scaleX(-1); 
     }
 }
 
@@ -192,10 +203,10 @@ body::after {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 80%; /* Adjust height as needed */
-    pointer-events: none; /* Ensures it doesn't block other interactions */
+    height: 80%; 
+    pointer-events: none; 
     overflow: hidden;
-    z-index: 3; /* Adjust as needed to ensure it's visible over other elements */
+    z-index: 3; 
     display: flex;
     justify-content: space-between;
 }
@@ -203,10 +214,10 @@ body::after {
 .fog {
     position: absolute;
     bottom: 0;
-    width: 33.3%; /* Adjust width to ensure three images cover the entire width */
-    max-width: 100%; /* Ensure it scales properly */
-    opacity: 0.5; /* Adjust opacity as needed */
-    animation: rise 20s linear infinite; /* Adjust duration as needed */
+    width: 33.3%; 
+    max-width: 100%; 
+    opacity: 0.5; 
+    animation: rise 20s linear infinite; 
 }
 
 .fog1 {
@@ -230,7 +241,7 @@ body::after {
         opacity: 0.5;
     }
     50% {
-        bottom: 50%; /* Stop rising at 50% of the container height */
+        bottom: 50%; 
         opacity: 0.6;
     }
     100% {
@@ -243,7 +254,7 @@ body::after {
     position: fixed;
     top: 10px;
     right: 10px;
-    z-index: 10; /* Ensure it's on top of other elements */
+    z-index: 10; 
 }
 
 .music-control button {
