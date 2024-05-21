@@ -1,20 +1,20 @@
-let isMusicPlaying = false;
-const music = document.getElementById('background-music');
-const musicButton = document.getElementById('music-button');
+document.addEventListener('DOMContentLoaded', function() {
+    var music = document.getElementById('background-music');
+    var playButton = document.getElementById('play-music-button');
 
-function toggleMusic() {
-    if (isMusicPlaying) {
-        music.pause();
-        musicButton.textContent = 'Play Music';
-    } else {
-        music.play();
-        musicButton.textContent = 'Pause Music';
+    function playMusic() {
+        music.play().catch(function(error) {
+            console.log('Audio playback failed:', error);
+            playButton.style.display = 'block'; // Show the button if playback fails
+        });
     }
-    isMusicPlaying = !isMusicPlaying;
-}
 
-function playMusic() {
-    music.play();
-    isMusicPlaying = true;
-    musicButton.textContent = 'Pause Music';
-}
+    // Try to autoplay the music
+    playMusic();
+
+    // Add event listener to the button to manually play music
+    playButton.addEventListener('click', function() {
+        music.play();
+        playButton.style.display = 'none'; // Hide the button after playing
+    });
+});
