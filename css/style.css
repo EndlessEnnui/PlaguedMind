@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url('/assets/entry1_bg.jpg'); /* Default background */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.entry-container {
+    position: relative;
+}
+
+.entry {
+    width: 80%;
+    max-width: 800px;
+    background-image: url('/assets/parch.jpeg'); /* Parchment paper background */
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    text-align: justify;
+    color: #362b00; /* Text color */
+    line-height: 1.6; /* Line height for readability */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #4d3819; /* Heading color */
+    text-decoration: underline; /* Underline for headings */
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Old parchment background texture */
+body::after {
+    content: '';
+    background: url('/assets/parch.jpeg');
+    opacity: 0.1; /* Adjust opacity to blend with the background */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+/* Add more styles as needed */
