@@ -190,3 +190,55 @@ body::after {
         transform: scaleX(1); 
     }
 }
+
+.fog-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%; /* Adjust height as needed */
+    pointer-events: none; /* Ensures it doesn't block other interactions */
+    overflow: hidden;
+    z-index: 3; /* Adjust as needed to ensure it's visible over other elements */
+    display: flex;
+    justify-content: space-between;
+}
+
+.fog {
+    position: absolute;
+    bottom: 0;
+    width: 33.3%; /* Adjust width to ensure three images cover the entire width */
+    max-width: 100%; /* Ensure it scales properly */
+    opacity: 0.5; /* Adjust opacity as needed */
+    animation: rise 20s linear infinite; /* Adjust duration as needed */
+}
+
+.fog1 {
+    left: 0;
+    animation-delay: 0s;
+}
+
+.fog2 {
+    left: 33.3%;
+    animation-delay: 5s;
+}
+
+.fog3 {
+    left: 66.6%;
+    animation-delay: 10s;
+}
+
+@keyframes rise {
+    0% {
+        bottom: 0;
+        opacity: 0.5;
+    }
+    50% {
+        bottom: 50%; /* Stop rising at 50% of the container height */
+        opacity: 0.6;
+    }
+    100% {
+        bottom: 0;
+        opacity: 0.5;
+    }
+}

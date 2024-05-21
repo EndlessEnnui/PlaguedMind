@@ -15,7 +15,7 @@ function showEntry(index) {
 
 
 document.addEventListener('keydown', (event) => {
-    const flipSound = new Audio('../audio/page_flip.wav');
+    const flipSound = document.getElementById('flip');
     if (event.key === 'ArrowRight') {
         currentEntryIndex = Math.min(currentEntryIndex + 1, entries.length - 1);
         showEntry(currentEntryIndex);
