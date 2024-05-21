@@ -10,16 +10,20 @@
     
 </head>
 <body>
-    <audio id="background-music" loop>
-        <source src="audio/medieval_music.mp3" type="audio/mp3">
+    <audio id="backgroundMusic" src="audio/home.wav" loop>
+      
         Your browser does not support the audio element.
     </audio>
     <div class="home-content">
         <h1>Plagued Mind</h1>
         <h2>By Jaymian Bustos</h2>
         <a href="journal.html" class="enter-link">Read Journal</a>
+       
     </div>
-    <button id="play-music-button" style="display:none;">Play Music</button>
+    <div class="music-control">
+        <button id="musicButton" onclick="toggleMusic()">Play Music</button>
+    </div>
     <script src="js/sketch.js"></script>
+    <script src="js/soundhome.js"></script>
 </body>
 </html>
