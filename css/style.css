@@ -164,7 +164,7 @@ body::after {
 .plague-doctor {
     position: absolute;
     bottom: 0;
-    height: 100px; /* Adjust height as needed */
+    height: 250px; /* Adjust height as needed */
     animation: walk 10s linear infinite; /* Adjust duration as needed */
 }
 
