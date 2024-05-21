@@ -34,10 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
     pauseButton.addEventListener('click', () => {
         if (audio.paused) {
             audio.play();
-            pauseButton.textContent = 'Pause Audio';
+            pauseButton.textContent = 'Pause Music';
         } else {
             audio.pause();
-            pauseButton.textContent = 'Play Audio';
+            pauseButton.textContent = 'Play Music';
         }
     });
 });
