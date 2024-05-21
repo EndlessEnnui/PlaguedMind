@@ -5,24 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medieval Journal</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/addons/p5.sound.min.js"></script>
 </head>
 <body>
+    <audio id="background-music" loop>
+        <source src="audio/medieval_music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+   
+
     <div id="journal" class="entry">
+        <div class="decorative-border"></div>
         <div class="content">
             <h2>Entry 1: Day I</h2>
             <p>A great deal of misfortune has befell upon the land today. The village that we've traded with over in the East has been succumbed by a great disease. Rumor has it that over half of the population was buried within a fortnight. As far as I know we are still in commerce with that village regardless, hopefully we do not live to regret it.</p>
         </div>
     </div>
 
+
     <div id="journal" class="entry">
+        <div class="decorative-border"></div>
         <div class="content">
             <h2>Entry 2: Day VII</h2>
-            <p>Two new visitors, a boy named Todd and his older sister Mary, have arrived from the East village. They state that they are the last of their village and seek refuge here before they too become victims of the plague. My village agreed to provide them shelter with the Miller's until they can situate a permanent home to stay in. I can't image how devastated they must be, losing their family and friends just in a matter of days. I wouldn't wish such an event on anyone, even my greatest enemies.
-            </p>
+            <p>Two new visitors, a boy named Todd and his older sister Mary, have arrived from the East village. They state that they are the last of their village and seek refuge here before they too become victims of the plague. My village agreed to provide them shelter with the Miller's until they can situate a permanent home to stay in. I can't image how devastated they must be, losing their family and friends just in a matter of days. I wouldn't wish such an event on anyone, even my greatest enemies.</p>
         </div>
     </div>
 
     <div id="journal" class="entry">
+        <div class="decorative-border"></div>
         <div class="content">
             <h2>Entry 3: Day IX</h2>
             <p> The house is coming along quite swell. Although it won't be grandeous in any shape imaginable, it was enough for a growing girl to help raise her younger sibling without any worry of being exposed to the elements. I volunteered to look after the two from time to time as I myself have lost my parents to a disease years ago. Poor children, its such an unfortunate fate to their family. If only I could've done something to change their family's fate.</p>
@@ -30,8 +41,9 @@
     </div>
 
 
-    ]
+    
     <div id="journal" class="entry">
+        <div class="decorative-border"></div>
         <div class="content">
             <h2>Entry 4: Day XVII</h2>
             <p> Cases of the now pronounced, "Black Plague" have been showing up in my village. The infected were advised to remain in their homes as they await their turn with Doctor Williams. Mary and Todd are petrified, they worry that the village will fall into the same fate as their own. I assured them that it would never come to that and I would do anything to protect them from becoming victim to the plague that consumed their family.
@@ -40,6 +52,7 @@
     </div>
 
     <div id="journal" class="entry">
+        <div class="decorative-border"></div>
         <div class="content">
             <h2>Entry 5: Day XXXI</h2>
             <p> The village is in panic. Doctor Williams has fell ill along with the others. The population dwindles as more of our people show signs of fevers and pouring out their innards across the floors. I've instructed the children remain in their home and that everything will be fine, even though they know well enough that the end is drawing near. I know that I'm not the brightest flower in the gallery but I have to try something, ANYTHING. I need to try for their sake.
@@ -48,6 +61,7 @@
     </div>
 
     <div id="journal" class="entry">
+        <div class="decorative-border"></div>
         <div class="content">
             <h2>Entry 6: Day XXXIV</h2>
             <p> It's been quite some time since I've updated the journal. To make haste of things, I have taken in the Mary and Todd into my home, the disease has run rapid amongst the people and being alone in their home but I think I've finally found a method that can help my people. A doctor named Charles de L'Orme seems to have crafted a mask that can not only prevent the the wearer from smelling the dreaded decay of man but also make the wearer immune to disease. I've decided to task myself to make such a mask so that I could help my village recover from these awful times.
@@ -56,5 +70,9 @@
     </div>
     <!-- Repeat the structure for other entries -->
     <script src="js/main.js"></script>
+    <script src="js/sound.js"></script>
 </body>
+<footer>
+ 
+</footer>
 </html>

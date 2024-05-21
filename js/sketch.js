@@ -1,14 +1,21 @@
 let bubbles = [];
+let canvas;
 
 function setup() {
-  createCanvas(600, 400);
-  for (let i = 0; i < 100; i++){
+  canvas = createCanvas(windowWidth, windowHeight);
+  canvas.position(0, 0);
+  canvas.style("z-index, -2");
+  background(255);
+
+
+  for (let i = 0; i < 1000; i++){
     let x = random(width);
     let y = random(height);
     let r = random(10, 40);
-     bubbles[i] = new Bubble(x, 200, 20);
+     bubbles[i] = new Bubble(x, y, r);
   }
- 
+  
+  
 
 }
 
@@ -38,7 +45,11 @@ class Bubble {
 
   show() {
     noStroke();
-    fill(0, 255, 0, 7);
+    fill(25, 25, 25, 500);
     ellipse(this.x, this.y, this.r * 2);
   }
+}
+
+function windowResized(){
+  resizeCanvas(windowWidth, windowHeight);
 }

@@ -9,17 +9,21 @@ function showEntry(index) {
         } else {
             entry.style.display = 'none';
         }
+       
     });
 }
 
-showEntry(currentEntryIndex);
 
 document.addEventListener('keydown', (event) => {
+    const flipSound = new Audio('../audio/page_flip.wav');
     if (event.key === 'ArrowRight') {
         currentEntryIndex = Math.min(currentEntryIndex + 1, entries.length - 1);
         showEntry(currentEntryIndex);
+        flipSound.play();
     } else if (event.key === 'ArrowLeft') {
         currentEntryIndex = Math.max(currentEntryIndex - 1, 0);
         showEntry(currentEntryIndex);
+        flipSound.play();
     }
 });
+
