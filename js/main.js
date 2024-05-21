@@ -27,3 +27,17 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const audio = document.getElementById('background-audio');
+    const pauseButton = document.getElementById('pause-button');
+
+    pauseButton.addEventListener('click', () => {
+        if (audio.paused) {
+            audio.play();
+            pauseButton.textContent = 'Pause Audio';
+        } else {
+            audio.pause();
+            pauseButton.textContent = 'Play Audio';
+        }
+    });
+});

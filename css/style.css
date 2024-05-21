@@ -134,3 +134,20 @@ body::after {
     border-image: url('../assets/border.png') 30 stretch;
     z-index: 3;
 }
+
+#pause-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #4d3819;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 4;
+}
+
+#pause-button:hover {
+    background-color: #362b00;
+}
